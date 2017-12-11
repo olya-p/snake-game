@@ -1,0 +1,155 @@
+body,
+head {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Roboto, sans-serif
+;
+}
+#playing-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    border: 3px dotted #BDBDBD;
+    border-radius: 5px;
+}
+
+#playing-space {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#playing-space_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(220, 237, 200, 0.8);
+    z-index: 1;
+}
+
+#play-btn {
+    width: 50px;
+    height: 50px;
+    background: #7CB342;
+    color: #C5E1A5;
+    font-size: 30px;
+    border: none;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+#play-btn:hover {
+    color: #F1F8E9;
+}
+
+#playing-score-info {
+    display: none;
+    position:absolute;
+    left: 20px;
+    top: 0px;
+    right: 20px;
+    bottom: 60%;
+    padding: 20px;
+    color: #757575;
+    font-weight: bold;
+}
+
+#scores-table {
+    display: none;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #757575;
+    background: #C5E1A5;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+#scores-table-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -50px;
+    margin: auto;
+    color: #757575;
+    cursor: pointer;
+    margin-left: -50px;
+}
+
+#scores-table-btn:hover {
+    color: #7CB342;
+}
+
+#login-form {
+    position:absolute;
+    left: 20px;
+    top: 0px;
+    right: 20px;
+    bottom: 60%;
+    padding: 20px;
+    color: #757575;
+}
+
+#gamer-name {
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    color: #757575;
+    padding: 5px;
+}
+
+#size-menu {
+    width: 240px;
+    height: 40px;
+    margin: 20px auto 0;
+}
+
+.size-menu_item {
+    width: 80px;
+    height: 40px;
+    padding-top: 10px;
+    color: #757575;
+    float: left;
+    border-top: 3px solid transparent;
+    cursor: pointer;
+}
+
+.size-menu_item:hover,
+.size-menu_item.active {
+    color: #7CB342;
+}
+
+.size-menu_item.active {
+    border-color: #7CB342
+}
+
+.snake-block {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #9CCC65
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: radial-gradient(#FF5252, #F44336); /*#E53935*/
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake and Food</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+</head>
+<body>
+<div id="size-menu">
+    <div class="size-menu_item active" data-size="300">SMALL</div>
+    <div class="size-menu_item" data-size="500">MIDDLE</div>
+    <div class="size-menu_item" data-size="700">LARGE</div>
+</div>
+<div id="playing-container">
+    <div id="playing-space">
+    </div>
+    <div id="playing-space_overlay">
+        <div id="playing-score-info"></div>
+        <div id="login-form">
+            <p>enter you name</p>
+            <input id="gamer-name" type="text"/>
+        </div>
+        <button id="play-btn">&#10148;</button>
+        <div id="scores-table-btn">winners table</div>
+    </div>
+    <div id="scores-table">
+    </div>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
