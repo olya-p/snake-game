@@ -7,11 +7,10 @@ var MongoClient = require('mongodb').MongoClient;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var url = 'mongodb://oly:piv188@ds135946.mlab.com:35946/snakegame';
+var url = process.env.MONGOLAB_URI;
 
 MongoClient.connect(url, function(err, db) {
 
-    console.log("Connected successfully to server");
     var db = db.db("snakegame");
 
     //add player to players table
@@ -49,6 +48,5 @@ app.use('/', express.static(__dirname + '/'));
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
-app.listen(3000, function () {
-    console.log('Game app listening on port 3000!');
+app.listen(process.env.PORT || 3000, function () {
 });
